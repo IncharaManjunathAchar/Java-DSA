@@ -22,7 +22,7 @@ public class twosum{
         Solution sol = new Solution();
         int[] arr = sol.twoSum(nums,target);
         System.out.println("The array of indices pointing the pairs with target 10: ["+ arr[0]+","+arr[1]+"]");
-
+        sc.close();
     }
 }
 

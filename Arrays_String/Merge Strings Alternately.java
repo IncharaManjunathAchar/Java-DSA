@@ -9,7 +9,7 @@ Explanation: The merged string will be merged as so:
 word1:  a   b   c
 word2:    p   q   r
 merged: a p b q c r */
-
+import java.util.*;
 class Solution {
     public String mergeAlternately(String word1, String word2) {
         char[] w1 = word1.toCharArray();
