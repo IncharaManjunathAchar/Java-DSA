@@ -7,13 +7,14 @@ public class RnsomNote {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter the magazine text:");
-        String magazine = sc.next();
+        String magazine = sc.nextLine();
         System.out.println("Enter the ransomNote text:");
-        String ransomNote = sc.next();
+        String ransomNote = sc.nextLine();
         Solution sol = new Solution();
-        System.out.println("Is ransomNote can be constructed by using the letters from magazine?");
-        Boolean b = sol.canConstruct( ransomNote, magazine); 
+        System.out.println("Can ransomNote be constructed using letters from magazine?");
+        boolean b = sol.canConstruct(ransomNote, magazine);
         System.out.println(b);
+        sc.close();
 }
 }
 class Solution {
